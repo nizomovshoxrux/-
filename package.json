@@ -1,0 +1,31 @@
+{
+  "name": "education",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "watch:sass": "node-sass public/sass/main.scss public/css/style.css -w"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta1",
+    "core-js": "^3.3.2",
+    "mathlive": "^0.33.2",
+    "postcss-loader": "^3.0.0",
+    "raw-loader": "^0.5.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.0"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

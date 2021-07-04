@@ -1,0 +1,18 @@
+.level {
+
+  &-quantity {
+     opacity: 0;
+  }
+
+  &-btn {
+      cursor: pointer;
+  }
+
+  &-pointer {
+    transform: translateX(0);
+
+    @include respond(tab-land) {
+      display: none;
+    }
+  }
+}

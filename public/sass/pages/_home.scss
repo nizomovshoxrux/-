@@ -1,0 +1,198 @@
+.section {
+  margin: 70px 150px;
+
+  @include respond(tab-port) {
+    margin: 50px 80px;
+  }
+
+  @include respond(phone) {
+    margin: 40px 20px;
+  }
+
+  &-title {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 60px;
+    font-weight: 300;
+    margin-bottom: 40px;
+
+    @include respond(tab-port) {
+      font-size: 50px;
+    }
+
+    @include respond(phone) {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &-info {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+
+    &-icon {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    &-title {
+      font-size: 25px;
+      text-align: center;
+      margin-bottom: 35px;
+
+      @include respond(phone) {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+    }
+
+    &-block {
+      width: 400px;
+
+      & .form-group:not(:last-child) {
+        margin-bottom: 15px;
+      }
+
+      & input::placeholder {
+        text-align: center;
+        color: rgba($black, .3);
+        font-weight: 500;
+      }
+
+      & .form-control option:first-child {
+        color: rgba($black, .3);
+      }
+
+      & select {
+        color: rgba($black, .3);
+        font-weight: 500;
+        text-align: center !important;
+        width: 300px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &-experience {
+    margin-bottom: 100px;
+
+    @include respond(phone) {
+      margin-bottom: 60px;
+      font-size: 14px;
+    }
+
+    &-block {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      @include respond(phone) {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+      }
+
+      & .form-check:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  &-script {
+    margin-bottom: 40px;
+
+    @include respond(phone) {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    &-titles {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin-top: 80px;
+
+      @include respond(phone) {
+        font-size: 8px;
+        margin-top: 40px;
+      }
+    }
+
+    &-title {
+
+      &-1 {
+        left: 3%;
+        position: absolute;
+        top: -22px;
+
+        @include respond(phone) {
+          top: 10px;
+        }
+      }
+      &-2 {
+        left: 26%;
+        position: absolute;
+        top: -45px;
+        @include respond(phone) {
+          top: 0;
+        }
+      }
+      &-3 {
+        left: 50%;
+        position: absolute;
+        top: -45px;
+
+        @include respond(phone) {
+          top: 0;
+        }
+      }
+      &-4 {
+        left: 86%;
+        position: absolute;
+        top: -45px;
+
+        @include respond(tab-land) {
+          left: 84%;
+        }
+
+        @include respond(phone) {
+          top: -10px;
+          left: 87%;
+        }
+      }
+    }
+  }
+
+  &-about {
+    margin-bottom: 40px;
+
+    &-text {
+      text-align: center;
+      margin-bottom: 30px;
+
+      @include respond(phone) {
+        font-size: 14px;
+      }
+    }
+
+    &-textarea {
+      width: 400px;
+      margin: 0 auto;
+      box-sizing: border-box;
+
+      @include respond(phone) {
+        width: 250px;
+      }
+    }
+  }
+
+  &-btn {
+    display: flex;
+    justify-content: center;
+
+    @include respond(phone) {
+      font-size: 14px;
+    }
+  }
+}
